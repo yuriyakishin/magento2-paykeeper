@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><?php echo $block->getTitle() ?><?php echo $block->getCssClass() ?></title>
+<link rel="stylesheet" href="<?= $block->getViewFileUrl('Yu_Paykeeper::css/styles.css');  ?>" />
+</head>
+<body>
+    <div class="block-paykeeper">
+        <h1><?php echo $block->getTitle() ?></h1>
+        <p><?php echo __('You have no orders.') ?></p>
+        <p><a href="/"><< <?php echo __('Go to Home') ?></a></p>
+    </div>
+</body>
+</html>

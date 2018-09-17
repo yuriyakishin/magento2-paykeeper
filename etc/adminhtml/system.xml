@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="payment">
+                <group id="paykeeper" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Paykeeper</label>
+                    <field id="active" translate="label comment" sortOrder="1" type="select" showInDefault="1" showInWebsite="1" showInStore="1">
+                        <label>Enable</label>
+                        <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    </field>
+                    <field id="title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Title</label>
+                    </field>
+                    <field id="cgi_url" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Gateway URL</label>
+                    </field>                    
+                    <field id="description" translate="label" type="textarea" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Description</label>
+                    </field>
+                    <field id="instructions" translate="label" type="textarea" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Instructions</label>
+                    </field>
+                    <field id="merchant_gateway_key" translate="label" type="text" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <label>Secret Key</label>
+                    </field>
+                    
+                    <field id="url_success" translate="label" type="link" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <frontend_model>\Yu\Paykeeper\Block\System\UrlSuccess</frontend_model>
+                        <label>URL for Success</label>
+                    </field>
+                    <field id="url_error" translate="label" type="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <frontend_model>\Yu\Paykeeper\Block\System\UrlError</frontend_model>
+                        <label>URL for Error</label>
+                    </field>
+                    <field id="url_notify" translate="label" type="label" sortOrder="60" showInDefault="1" showInWebsite="1" showInStore="0" canRestore="1">
+                        <frontend_model>\Yu\Paykeeper\Block\System\UrlNotify</frontend_model>
+                        <label>URL for Postback/Notify</label>
+                    </field>
+                </group>
+        </section>
+    </system>
+</config>

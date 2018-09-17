@@ -1,0 +1,16 @@
+body {
+    font: 0.92em/1.4 Arial,Helvetica,sans-serif !important;
+    background: #eeeeee;
+}
+h1 {
+    color:#999;
+}
+.block-paykeeper {
+    border: 1px solid #999;
+    display: block;
+    margin: 20px auto;
+    padding: 20px;
+    width: 550px;
+    border-radius: 10px;
+    background-color: #fefefe;
+}

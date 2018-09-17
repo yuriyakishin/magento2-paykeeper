@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<page layout="paykeeper_layout" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="default_head_blocks"/>
+    <body>
+        <block class="Yu\Paykeeper\Block\Pay" name="paykeeper.error" before="-" template="Yu_Paykeeper::error.phtml" cacheable="false"/>
+    </body>
+</page>

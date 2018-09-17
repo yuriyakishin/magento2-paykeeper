@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @author Yuriy Akishin.
+ * @copyright 2018 Yu.
+ * @package Yu_Paykeeper.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <paykeeper>
+                <active>1</active>
+                <model>PaykeeperFacade</model>
+                <order_status>pending</order_status>
+                <title>Paykeeper</title>
+                <instructions></instructions>
+                <description></description>
+                <merchant_gateway_key></merchant_gateway_key>
+                <allowspecific>0</allowspecific>
+                <group>Offline</group>
+                <is_gateway>1</is_gateway>
+                <can_use_checkout>1</can_use_checkout>
+                <cgi_url></cgi_url>
+                <url_success>paykeeper/success</url_success>
+                <url_error></url_error>
+                <url_notify></url_notify>
+                <sort_order>1</sort_order>
+            </paykeeper>
+        </payment>
+    </default>
+</config>
