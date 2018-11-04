@@ -22,6 +22,12 @@ class ConfigProvider implements \Magento\Checkout\Model\ConfigProviderInterface
      */
     protected $urlBuilder;
     
+    /**
+     * 
+     * @param \Magento\Payment\Gateway\Config\Config $config
+     * @param SessionManagerInterface $session
+     * @param \Magento\Framework\UrlInterface $urlBuilder
+     */
     public function __construct(
         \Magento\Payment\Gateway\Config\Config $config,
         SessionManagerInterface $session,

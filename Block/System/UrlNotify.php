@@ -14,6 +14,12 @@ class UrlNotify extends \Magento\Config\Block\System\Config\Form\Field
      */
     protected $urlBuilder;
     
+    /**
+     * 
+     * @param \Magento\Framework\Url $urlBuilder
+     * @param \Magento\Backend\Block\Template\Context $context
+     * @param array $data
+     */
     public function __construct(
         \Magento\Framework\Url $urlBuilder,
         \Magento\Backend\Block\Template\Context $context,

@@ -15,7 +15,9 @@ class PaykeeperNotify implements \Yu\Paykeeper\Api\PaykeeperNotifyInterface
     private $_orderRepository;
     
     /**
-     * @param \Magento\Payment\Gateway\Config\Config $config
+     * 
+     * @param \Magento\Payment\Gateway\Config\Config $_config
+     * @param \Magento\Sales\Model\OrderRepository $_orderRepository
      */
     public function __construct(
         \Magento\Payment\Gateway\Config\Config $_config,

@@ -28,6 +28,15 @@ class Error extends \Magento\Framework\App\Action\Action
      */
     protected $_checkoutSession;
     
+    /**
+     * 
+     * @param \Magento\Framework\App\Action\Context $context
+     * @param \Magento\Framework\View\Result\PageFactory $resultPageFactory
+     * @param \Magento\Framework\Translate\InlineInterface $translateInline
+     * @param \Magento\Framework\Controller\Result\RawFactory $resultRawFactory
+     * @param \Magento\Checkout\Model\Session $checkoutSession
+     * @param array $data
+     */
     public function __construct(
             \Magento\Framework\App\Action\Context $context,
             \Magento\Framework\View\Result\PageFactory $resultPageFactory,
